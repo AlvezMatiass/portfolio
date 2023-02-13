@@ -1,0 +1,84 @@
+.footer {
+    height: 30vh;
+    background-color: #ece7e1;
+
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: #1a1818;
+        text-decoration: none;
+        font-family: 'Noto Sans Symbols 2', sans-serif;
+        font-size: 2.6rem;
+        margin: 0 16px;
+        letter-spacing: -2px;
+        transition: .5s;
+        text-align: center;
+    }
+    a:hover {
+        letter-spacing: 4px;
+        transition: .5s;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        grid-template-columns: 270px 270px 270px;
+        a {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+@media (max-width: 785px) {
+    .footer {
+        grid-template-columns: 230px 230px 230px;
+        a {
+            font-size: 1.9rem;
+        }
+        a:hover {
+            letter-spacing: 3px;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .footer {
+        height: 40vh;
+        grid-template-columns: 300px;
+        grid-template-rows: auto auto auto;
+        a {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .footer {
+        height: 50vh;
+
+        grid-template-columns: 320px;
+        a {
+            font-size: 2;
+        }
+        a:hover {
+            letter-spacing: 8px;
+            transition: .5s;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .footer { 
+        grid-template-columns: 260px;
+        grid-template-rows: auto auto auto;
+        a {
+            font-size: 1.8rem;
+        }
+        a:hover {
+            letter-spacing: 4px;
+            transition: .5s;
+        }    
+    }
+}

@@ -1,0 +1,28 @@
+// SCSS IMPORT
+
+@use './components/Home/Home.scss';
+
+@use './components/Footer/Footer.scss';
+
+@use './components/pages/Proyectos/Proyectos.scss';
+
+@use './components/pages/Contacto/Contacto.scss';
+
+@use './components/pages/Sobremi/Sobremi.scss';
+
+// SCSS COMPONENTES
+
+@use './components/Inicio/Inicio.scss';
+
+// CSS PURO
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf0e6;
+  font-family: 'Montserrat', sans-serif;
+}

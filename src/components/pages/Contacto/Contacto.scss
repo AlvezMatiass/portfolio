@@ -1,0 +1,84 @@
+.contacto {
+    height: 70vh;
+    background-color: #1a1818;
+    p {
+        font-size: 44px;
+    }
+    .contactoContainer {
+        p {
+            font-size: 22px;
+            letter-spacing: 2px;
+            margin: 0 0 10px 30px;
+            color: #ece7e1;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .contactoInfo {
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-style: italic;
+                font-size: 16px;
+                letter-spacing: 3px;
+                margin: 12px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .contacto {
+        height: 50vh;
+        .contactoContainer {
+            p {
+                font-size: 14px;
+                margin: 0 0 10px 20px;
+            }
+            .contactoInfo {
+                p {
+                    font-size: 14px;
+                    margin: 18px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .contacto {
+        p {
+            font-size: 30px;
+        }
+        .contactoContainer {
+            p {
+                font-size: 12px;
+            }
+            .contactoInfo {
+                p {
+                    font-size: 12px;
+                    margin: 16px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contacto {
+        p {
+            font-size: 26px;
+        }
+        .contactoContainer {
+            p {
+                font-size: 12px;
+            }
+            .contactoInfo {
+                p {
+                    font-size: 12px;
+                    margin: 16px 20px;
+                }
+            }
+        }
+    }
+}
