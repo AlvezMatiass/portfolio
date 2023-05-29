@@ -24,9 +24,14 @@ const Proyectos = () => {
       name: 'CONPAS - Web Developer',
       github: 'https://github.com/AlvezMatiass/CONPAS',
       url: 'https://alvezmatiass.github.io/CONPAS'
+    },
+    {
+      name: 'Haz&Enves - ReactJS Developer',
+      github: 'https://github.com/AlvezMatiass/HazEnves',
+      url: 'https://hazyenves.netlify.app/'
     }
   ]
-
+  
   return (
     <div className='proyectos'>
       <Inicio lugar='PROYECTOS' />
