@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='home'>
-      <img src="https://media.licdn.com/dms/image/C5603AQGOxGziePZ9TQ/profile-displayphoto-shrink_800_800/0/1655217039597?e=1679529600&v=beta&t=XGJS3MIUcHvf9f1OrW1U0k8DbjOtnFBxTJKY1MCfWZA" alt="foto" className="foto" />
+      <img src="https://media.licdn.com/dms/image/C5603AQGOxGziePZ9TQ/profile-displayphoto-shrink_800_800/0/1655217039597?e=1691020800&v=beta&t=0fBA9L8icVPv7Yksr5hF_KGyogDyYBIbJpLPksuZSPM" alt="foto" className="foto" />
       <div className="info">
         <p className="nombre">MATIAS ALVEZ</p>
         <p className="front">FrontEnd Developer ReactJS</p>
