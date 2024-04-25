@@ -1,0 +1,23 @@
+---
+import ProfileImage from "./profileImage.astro"
+---
+
+<div class="Profile">
+    <ProfileImage />
+    <p class="Presentation">Hola, soy <strong>Matias</strong></p>
+</div>
+
+<style>
+    .Profile {
+		margin-top: 2rem;
+		display: flex;
+		gap: 18px;
+	}
+	.Presentation {
+		font-size: 24px;
+		color: #111;
+	}
+	strong {
+		color: #665712;
+	}
+</style>

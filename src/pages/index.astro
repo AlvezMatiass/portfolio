@@ -1,0 +1,49 @@
+---
+import Header from "../components/header.astro"
+import Profile from "../components/profile/profile.astro";
+import ProfileDescription from "../components/profile/profileDescription.astro"
+import ProfileInformation from "../components/profile/profileInformation.astro";
+import Proyecto from '../components/proyecto/proyecto.astro'
+import Sobremi from '../components/sobremi/sobremi.astro'
+import Footer from '../components/footer.astro'
+
+import '@fontsource-variable/lexend';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Matias Alvez</title>
+	</head>
+	<body>
+		<Header />
+		<Profile />
+		<ProfileDescription />
+		<div class="Information">
+			<ProfileInformation link="https://github.com/AlvezMatiass" item="LinkedIn" />
+			<ProfileInformation link="https://github.com/AlvezMatiass" item="GitHub" />
+			<ProfileInformation link="https://github.com/AlvezMatiass" item="CV" />
+		</div>
+		<Proyecto />
+		<Sobremi />
+		<Footer />
+	</body>
+</html>
+
+<style>
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: center;
+		background-color: #fefff1;
+		font-family: 'Lexend Variable', sans-serif;
+	}
+	.Information {
+		display: flex;
+		gap: 24px;
+	}
+</style>
