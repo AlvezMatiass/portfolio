@@ -27,6 +27,10 @@ export const english = {
     {
         "titulo": "Figma",
         "descripcion": "Web interface design, presentations, wireframes, and prototypes"
+    },
+    {
+    "titulo": "Mailchimp",
+    "descripcion": "Design and publishing of monthly Email Blasts"
     }
     ]
 }
