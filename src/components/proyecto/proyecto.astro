@@ -1,20 +1,12 @@
-<section id="proyectos">
-    <p><strong>Proyectos</strong> {'/>'}</p>
-    <div>
+---
+import ProyectoCard from '../proyecto/proyectoCard.astro'
+import { proyectos } from '../../data/proyectos'
+---
 
-    </div>
+<section id="proyectos pt-4">
+  <div id="jobContainer">
+    {proyectos.map(proyecto => (
+      <ProyectoCard {...proyecto} />
+    ))}
+  </div>
 </section>
-
-<style>
-    section {
-        margin-top: 2rem;
-    }
-    p {
-        font-size: 16px;
-        color: #111;
-        padding: 0 10px 0 10px;
-    }
-    strong {
-        font-size: 20px;
-    }
-</style>

@@ -1,12 +1,32 @@
-
-
+---
+const { patch } = Astro.props;
+---
 
 <header>
-    <ul>
-        <li><a href="/#proyectos">Proyectos</a></li>
-        <li><a href="/#sobremi">Sobre mi</a></li>
-    </ul>
+  <ul class="flex flex-wrap gap-4 items-center justify-center text-center">
+    <li><a href="/#proyectos" class="text-[#FFFCEE] text-[16px]">Proyectos</a></li>
+    <li><a href="/#sobremi" class="text-[#FFFCEE] text-[16px]">Sobre mi</a></li>
+    <li class="flex gap-4 items-center">
+      <a
+        href="/en"
+        class={`text-[#FFFCEE] text-[16px] ${
+          patch === 'en' ? 'opacity-100' : 'opacity-50'
+        }`}
+      >
+        English
+      </a>
+      <a
+        href="/es"
+        class={`text-[#FFFCEE] text-[16px] ${
+          patch === 'es' ? 'opacity-100' : 'opacity-50'
+        }`}
+      >
+        Español
+      </a>
+    </li>
+  </ul>
 </header>
+
 
 <style>
     header {
@@ -21,9 +41,6 @@
         list-style: none;
     }
     a {
-        font-size: 16px;
-        font-weight: 500;
-        text-decoration: none;
-        color: #111;
+        @apply text-[16px] text-[#FFFCE] font-medium no-underline
     }
 </style>

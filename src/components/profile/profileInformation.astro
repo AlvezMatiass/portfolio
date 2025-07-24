@@ -7,15 +7,4 @@ interface Props {
 const { item, link } = Astro.props
 ---
 
-<a href={link}>{item}</a>
-
-<style>
-    a {
-        font-size: 14px;
-        text-decoration: none;
-        background-color: #111;
-        color: #fdffdc;
-        padding: 2px 14px 2px 14px;
-        border-radius: 10px;
-    }
-</style>
+<a href={link} class="text-[14px] no-underline bg-[#FFFCEE] text-[#161616] py-0.5 px-4 rounded-xl font-medium ">{item}</a>

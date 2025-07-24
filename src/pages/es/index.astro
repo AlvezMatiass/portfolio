@@ -1,0 +1,48 @@
+---
+import Header from "../../components/header.astro"
+import Profile from "../../components/profile/profile.astro";
+import ProfileDescription from "../../components/profile/profileDescription.astro"
+import ProfileInformation from "../../components/profile/profileInformation.astro";
+import Proyecto from '../../components/proyecto/proyecto.astro'
+import Sobremi from '../../components/sobremi/sobremi.astro'
+import Footer from '../../components/footer.astro'
+
+import '@fontsource-variable/lexend';
+import { español } from "../../data/es";
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Matias Alvez</title>
+	</head>
+	<body class="flex justify-center bg-[#161616] font-['Lexend_Variable'] min-h-screen p-4 ">
+		<div class="w-[520px] flex flex-col items-center ">
+			<Header patch="es"/>
+			<Profile soy={español.soy} />
+			<ProfileDescription profileDescription={español.ProfileDescription} />
+			<div class="flex self-start items-start gap-2 pt-2">
+				<ProfileInformation link="https://github.com/AlvezMatiass" item="LinkedIn" />
+				<ProfileInformation link="https://github.com/AlvezMatiass" item="GitHub" />
+				<ProfileInformation link="https://github.com/AlvezMatiass" item="CV" />
+			</div>
+			<p class=" flex self-start text-[#FFFCEE] text-[24px] font-semibold pt-4 ">{español.ProyectoTitle} {'/>'}</p>
+			<Proyecto />
+			<p class=" flex self-start text-[#FFFCEE] text-[24px] font-semibold pt-4 ">{español.HabilidadesTitle} {'/>'}</p>
+			<Sobremi habilidades={español.habilidades} />
+			<Footer />
+		</div>
+	</body>
+</html>
+
+<style>
+	body {
+	}
+	.Information {
+		display: flex;
+		gap: 24px;
+	}
+</style>

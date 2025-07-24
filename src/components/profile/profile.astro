@@ -1,10 +1,13 @@
 ---
 import ProfileImage from "./profileImage.astro"
+
+const { soy } = Astro.props
+
 ---
 
-<div class="Profile">
+<div class="flex self-start items-center gap-4 pt-6 pb-2">
     <ProfileImage />
-    <p class="Presentation">Hola, soy <strong>Matias</strong></p>
+    <p class="text-[24px] text-[#FFFCEE]">{soy} <strong class="text-[#FFFCE] ">Matias</strong></p>
 </div>
 
 <style>
@@ -15,9 +18,9 @@ import ProfileImage from "./profileImage.astro"
 	}
 	.Presentation {
 		font-size: 24px;
-		color: #111;
+		color: #FFFCEE;
 	}
 	strong {
-		color: #665712;
+		color: #FFFCEE;
 	}
 </style>

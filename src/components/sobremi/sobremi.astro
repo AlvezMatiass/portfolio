@@ -1,32 +1,16 @@
-<section id="sobremi">
-    <p class="title"><strong class="titlestrong">Sobre mi</strong> {'/>'}</p>
-    <p class="sobremitext">Me llamo <strong>Matías Alvez</strong>. Empecé en el mundo de la programación a mediados de 2023. Actualmente me encuentro en búsqueda de mi primera experiencia laboral.</p>
-    <p class="sobremitext">Mis conocimientos se basan en el desarrollo <strong>Front-End</strong> basado en <strong>ReactJS</strong>, además de <strong>React Native</strong> para el desarrollo de aplicaciones móviles.</p>
-    <p class="sobremitext">Me considero una persona con rápido aprendizaje, con muchas ganas de conocer el mundo profesional y trabajar junto a un equipo de profesionales para poder mejorar mis conocimientos en este medio.</p>
-</section>
+---
+const { habilidades = [] } = Astro.props;
+---
 
-<style>
-    p {
-        color: #111
-    }
-    section {
-        margin-top: 2rem;
-    }
-    .title {
-        font-size: 16px;
-        padding: 0 10px 0 10px;
-    }
-    .titlestrong {
-        font-size: 20px;
-        color: #111;
-    }
-    .sobremitext {
-        max-width: 500px;
-        font-size: 18px;
-        text-align: justify;
-        padding: 0 10px 0 10px;
-    }
-    strong {
-        color: #665712;
-    }
-</style>
+<div>
+  {habilidades.length === 0 ? (
+    <p>No skills available.</p>
+  ) : (
+    habilidades.map(habilidad => (
+      <div class="mb-4">
+        <h3 class=" font-semibold text-[20px] text-[#FFFCEE] pl-2 pt-2">{habilidad.titulo} {'/>'}</h3>
+        <p class=" font-normal text-[16px] text-[#FFFCEE] pl-4 pt-1" >{habilidad.descripcion}</p>
+      </div>
+    ))
+  )}
+</div>

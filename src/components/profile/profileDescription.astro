@@ -1,18 +1,9 @@
-<div>
-    <p>Desarrollador <strong>Front-End</strong> con habilidades en <strong>ReactJS</strong> y <strong>React Native</strong>, especializado en la creación de interfaces tanto para aplicaciones web como móviles.</p>
-</div>
+---
 
-<style>
-    div {
-        max-width: 520px;
-        margin-top: 1vh;
-        padding: 0 10px 0 10px;
-    }
-    p {
-        font-size: 18px;
-        text-align: justify;
-    }
-    strong {
-        color: #665712;
-    }
-</style>
+const { profileDescription } = Astro.props
+
+---
+
+<div>
+    <p class=" text-[16px] text-[#FFFCEE] text-justify pt-4 pb-4">{profileDescription}</p>
+</div>
