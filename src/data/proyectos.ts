@@ -7,6 +7,12 @@ export const proyectos = [
     habilidades: ["Wordpress", "Elementor PRO", "HTML", "CSS", "JavaScript", "SEO", "YoastSEO", "SurferSEO", "Analisis Web", "Plugins", "Blog Post"]
   },
   {
+    titulo: "theKollab - 2025",
+    url: "https://thekollab.io/",
+    imagen: "https://i.ibb.co/Q44tv1X/THEKOLLAB.png",
+    habilidades: ["Freelance", "Wordpress", "Elementor PRO", "HTML", "CSS", "JavaScript", "SEO", "Rank Math SEO", "Plugins", "Blog Post", "Error Correction"]
+  },
+  {
     titulo: "Haz&Enves - 2023",
     url: "https://hazyenves.netlify.app/",
     imagen: "https://i.ibb.co/xS7p0ktS/HAZYENVES.png",
