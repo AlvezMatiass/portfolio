@@ -6,7 +6,7 @@ export const english = {
      "habilidades": [
     {
         "titulo": "Front-End",
-        "descripcion": "HTML5, CSS3, JavaScript, ReactJS, React Native"
+        "descripcion": "HTML5, CSS3, JavaScript, ReactJS, React Native",
     },
     {
         "titulo": "WordPress",

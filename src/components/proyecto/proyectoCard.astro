@@ -1,12 +1,22 @@
 ---
-const { titulo, url, imagen, habilidades } = Astro.props;
+const { titulo, url, imagen, habilidades, figmaName, link } = Astro.props;
 
 ---
 
 <div class="jobContainer">
-  <p class="text-[18px] font-medium text-[#FFFCEE] py-3">{titulo}</p>
+    <p class="text-[18px] font-medium text-[#FFFCEE] py-3">{titulo}</p>
+  {link && figmaName && (
+  <a 
+    href={link} 
+    target="_blank" 
+    class="text-[12px] no-underline bg-[#FFFCEE] text-[#161616] py-0.5 px-4 rounded-xl font-medium"
+  >
+    {figmaName}
+    </a>
+  )}
+  
   <a href={url} target="_blank" class=" no-underline text-[#FFFCEE] " >
-    <img src={imagen} alt="" class=" w-full "> 
+    <img src={imagen} alt="" class=" w-full mt-2"> 
   </a>
   <div class="flex flex-wrap gap-2 pt-3">
     {habilidades.map(h => <p class="bg-[#FFFCEE] text-[#161616] font-medium text-[10px] py-0.5 px-1.5 rounded-lg text-center ">{h}</p>)}
