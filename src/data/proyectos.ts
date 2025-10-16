@@ -11,7 +11,7 @@ export const proyectos = [
   {
     titulo: "theKollab - 2025",
     url: "https://thekollab.io/",
-    imagen: "/THEKOLLAB2da,png",
+    imagen: "/THEKOLLAB2da.png",
     habilidades: ["Freelance", "Wordpress", "Elementor PRO", "HTML", "CSS", "JavaScript", "SEO", "Rank Math SEO", "Plugins", "Blog Post", "Error Correction"],
   },
   {
